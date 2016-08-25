@@ -1,0 +1,54 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/rl_inputdlg_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:background="#00000000"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="left"
+            android:imeOptions="actionSend"
+            android:maxLength="32"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:text=""
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/confrim_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="center"
+            android:text="发送"/>
+    </LinearLayout>
+
+</LinearLayout>
